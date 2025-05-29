@@ -40,6 +40,22 @@ cd subdomain-scanner-testing
 pip install -r requirements.txt
 ```
 
+## 📁 File Management
+
+### Important Files to Keep
+- `subdomain_scanner.py` - Main scanner engine
+- `scan.py` - Scanning script
+- `cli.py` - Command line interface
+- `export_results.py` - Database export utility
+- `README.md` - This documentation
+
+### Files NOT to Upload/Transfer
+- `scan_results.db` - Database file (can be large, contains local scan data)
+- `subdomain_scanner.log` - Log files
+- `*.csv` - CSV export files (regenerate as needed)
+
+**Note**: Use `export_results.py` to export your scan data to CSV before transferring to a new system.
+
 ## 🎯 Quick Start
 
 ### Analyze Your Current Results
@@ -71,6 +87,18 @@ python cli.py example_domains.txt --export-200
 
 # Full example with all options
 python cli.py example_domains.txt --concurrent 80 --rescan-failed --export-all
+```
+
+### Export Database Results
+
+Export your scan results to CSV at any time (without running a new scan):
+
+```bash
+# Export all results to CSV
+python export_results.py
+
+# This creates 'corrected_results.csv' with all your past scan data
+# Perfect for transferring results between systems or backup
 ```
 
 ### Option 2: Optimized Configurations

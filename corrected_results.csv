@@ -1,0 +1,435 @@
+domain,status_code,redirect_info
+about.gitlab.com,200,https://about.gitlab.com
+about.instagram.com,200,https://about.instagram.com
+about.reddit.com,200,https://about.reddit.com (302) -> https://www.redditinc.com/ (301) -> https://redditinc.com/ (200)
+accounts.snapchat.com,200,https://accounts.snapchat.com (301) -> https://accounts.snapchat.com/accounts/v2/login (200)
+ads.tiktok.com,200,https://ads.tiktok.com (301) -> https://ads.tiktok.com/business/ (302) -> https://ads.tiktok.com/business/en-GB?tt4b_lang_redirect=1 (200)
+api.facebook.com,200,https://api.facebook.com (301) -> https://developers.facebook.com/ (200)
+api.github.com,200,https://api.github.com
+api.reddit.com,200,https://api.reddit.com
+api.slack.com,200,https://api.slack.com
+api.spotify.com,200,https://api.spotify.com (301) -> https://developer.spotify.com/ (200)
+artists.spotify.com,200,https://artists.spotify.com (307) -> https://artists.spotify.com/home (200)
+askubuntu.com,200,https://askubuntu.com
+aws.amazon.com,200,https://aws.amazon.com
+azure.microsoft.com,200,https://azure.microsoft.com (302) -> https://azure.microsoft.com/en-us/ (200)
+blog.bitbucket.org,200,https://blog.bitbucket.org (301) -> https://bitbucket.org/blog/ (301) -> https://www.atlassian.com/bitbucket/blog/ (301) -> https://www.atlassian.com/bitbucket/blog (301) -> https://www.atlassian.com/blog/bitbucket (200)
+blog.cloudflare.com,200,https://blog.cloudflare.com
+blog.digitalocean.com,200,https://blog.digitalocean.com (301) -> https://www.digitalocean.com/blog/ (301) -> https://www.digitalocean.com/blog (200)
+blog.discord.com,200,https://blog.discord.com (302) -> https://discord.com/blog/ (200)
+blog.docker.com,200,https://blog.docker.com (301) -> https://www.docker.com/blog (301) -> https://www.docker.com/blog/ (200)
+blog.dropbox.com,200,https://blog.dropbox.com
+blog.fastly.com,200,https://blog.fastly.com (302) -> http://www.fastly.com/blog (301) -> https://www.fastly.com/blog (200)
+blog.github.com,200,https://blog.github.com (301) -> https://github.blog/ (200)
+blog.heroku.com,200,https://blog.heroku.com (301) -> https://www.heroku.com/blog/ (200)
+blog.stripe.com,200,https://blog.stripe.com (301) -> https://stripe.com/blog (200)
+blog.twitch.tv,200,https://blog.twitch.tv (302) -> https://blog.twitch.tv/en/ (200)
+blog.uber.com,200,https://blog.uber.com (301) -> https://uber.com/blog/ (301) -> https://www.uber.com/blog/ (302) -> https://www.uber.com/en-IE/blog/dublin/ (200)
+blog.zoom.us,200,https://blog.zoom.us (301) -> https://www.zoom.com/en/blog/ (302) -> https://zoom.us/syncStatus?continue=https://www.zoom.com/en/blog/ (301) -> https://www.zoom.com/en/blog/?cms_guid=false&lang=null (200)
+business.facebook.com,200,https://business.facebook.com (302) -> https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fbusiness.facebook.com%2F%3Fnav_ref%3Dbiz_unified_f3_login_page_to_mbs&login_options%5B0%5D=FB&login_options%5B1%5D=IG&login_options%5B2%5D=SSO&config_ref=biz_login_tool_flavor_mbs (200)
+business.instagram.com,200,https://business.instagram.com
+business.linkedin.com,200,https://business.linkedin.com
+business.pinterest.com,200,https://business.pinterest.com (301) -> https://business.pinterest.com/en-gb/ (200)
+business.snapchat.com,200,https://business.snapchat.com
+business.tiktok.com,200,https://business.tiktok.com
+calendar.google.com,200,https://calendar.google.com (302) -> https://calendar.google.com/calendar/u/0/r (302) -> https://accounts.google.com/ServiceLogin?service=cl&passive=1209600&osid=1&continue=https://calendar.google.com/calendar/u/0/r&followup=https://calendar.google.com/calendar/u/0/r&emr=1 (302) -> https://accounts.google.com/InteractiveLogin?continue=https://calendar.google.com/calendar/u/0/r&emr=1&followup=https://calendar.google.com/calendar/u/0/r&osid=1&passive=1209600&service=cl&ifkv=AdBytiM9stmq5CP9t9UkDa_kkyvRMkX6W0Woyw0E2CJAfwhgn6bo0FFRUikUWDb0JfuMZrn176j_aA (302) -> https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fu%2F0%2Fr&emr=1&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fu%2F0%2Fr&ifkv=AdBytiNtj7eMcUWT8Cf1foFG1Z4-0ra-bPmFhX5xTP2O4B7kCJ_QzKXp1Dj6gZ2TvZsn8fRqnQsJYA&osid=1&passive=1209600&service=cl&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S423324658%3A1748536756458551 (200)
+chat.stackoverflow.com,200,https://chat.stackoverflow.com
+classroom.github.com,200,https://classroom.github.com
+cloud.digitalocean.com,200,https://cloud.digitalocean.com (302) -> https://cloud.digitalocean.com/login (200)
+cloud.elastic.co,200,https://cloud.elastic.co
+cloud.mongodb.com,200,https://cloud.mongodb.com (303) -> https://www.mongodb.com/cloud (301) -> https://www.mongodb.com/products/platform/cloud (200)
+community.airbnb.com,200,https://community.airbnb.com (301) -> https://community.withairbnb.com/ (302) -> https://community.withairbnb.com/t5/community/categorypage/category-id/community-center (301) -> https://community.withairbnb.com:443/t5/Community-Center/ct-p/community-center (200)
+community.atlassian.com,200,https://community.atlassian.com
+community.ebay.com,200,https://community.ebay.com (302) -> https://community.ebay.com/t5/community/communitypage?nobounce (302) -> https://community.ebay.com/plugins/common/feature/oauth2sso_v2/sso_login_redirect?prompt=none&referer=https%3A%2F%2Fcommunity.ebay.com%2Ft5%2Fcommunity%2Fcommunitypage (302) -> https://auth.ebay.com/oauth2/authorize?client_id=eBay-Communit-PRD-91596af30-e4ce86d0&redirect_uri=eBay-eBay-Communit-P-bsuokgvyn&response_type=code&state=nFpjkM1mufo6eTwhtdb_2ue37dMcJ3WXAOmI_58IDqnM4oa73nN4WkZzAIKxlrmR58U0tPAvs7CAtLhWL-2fuu5Hz80top52b8DLYxO__j23DrL8DME6JS-c0Y1VR3S1f3Wui1jFviR9vzipCQ80d206m2rAvSHchDMct-7nailJw7tZfYxBvLag862BJDR-cWc_WxixJIiQ0_VoPHUJkA&scope=https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope&prompt=none&referer=https%3A%2F%2Fcommunity.ebay.com%2Ft5%2Fcommunity%2Fcommunitypage (302) -> https://auth2.ebay.com/oauth2/authorize?client_id=eBay-Communit-PRD-91596af30-e4ce86d0&redirect_uri=eBay-eBay-Communit-P-bsuokgvyn&response_type=code&state=nFpjkM1mufo6eTwhtdb_2ue37dMcJ3WXAOmI_58IDqnM4oa73nN4WkZzAIKxlrmR58U0tPAvs7CAtLhWL-2fuu5Hz80top52b8DLYxO__j23DrL8DME6JS-c0Y1VR3S1f3Wui1jFviR9vzipCQ80d206m2rAvSHchDMct-7nailJw7tZfYxBvLag862BJDR-cWc_WxixJIiQ0_VoPHUJkA&scope=https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope&prompt=none&referer=https%3A%2F%2Fcommunity.ebay.com%2Ft5%2Fcommunity%2Fcommunitypage (302) -> https://community.ebay.com/auth/oauth2callback?state=nFpjkM1mufo6eTwhtdb_2ue37dMcJ3WXAOmI_58IDqnM4oa73nN4WkZzAIKxlrmR58U0tPAvs7CAtLhWL-2fuu5Hz80top52b8DLYxO__j23DrL8DME6JS-c0Y1VR3S1f3Wui1jFviR9vzipCQ80d206m2rAvSHchDMct-7nailJw7tZfYxBvLag862BJDR-cWc_WxixJIiQ0_VoPHUJkA&error=login_required (302) -> https://community.ebay.com/t5/community/communitypage (301) -> https://community.ebay.com:443/ (200)
+community.shopify.com,200,https://community.shopify.com (302) -> https://community.shopify.com/c/shopify-community/ct-p/en (200)
+customers.gitlab.com,200,https://customers.gitlab.com (302) -> https://customers.gitlab.com/customers/sign_in (200)
+dashboard.stripe.com,200,https://dashboard.stripe.com (303) -> https://dashboard.stripe.com/login (200)
+dev.twitch.tv,200,https://dev.twitch.tv
+dev.twitter.com,200,https://dev.twitter.com (302) -> https://developer.twitter.com/ (301) -> https://developer.x.com/ (302) -> https://developer.x.com/en (200)
+devcenter.heroku.com,200,https://devcenter.heroku.com
+developer.apple.com,200,https://developer.apple.com
+developer.atlassian.com,200,https://developer.atlassian.com
+developer.ebay.com,200,https://developer.ebay.com
+developer.fastly.com,200,https://developer.fastly.com (301) -> https://www.fastly.com/documentation/developers/ (200)
+developer.microsoft.com,200,https://developer.microsoft.com (302) -> https://developer.microsoft.com/en-us/ (200)
+developer.paypal.com,200,https://developer.paypal.com (301) -> https://developer.paypal.com/home/ (200)
+developer.spotify.com,200,https://developer.spotify.com
+developer.uber.com,200,https://developer.uber.com
+developers.cloudflare.com,200,https://developers.cloudflare.com
+developers.facebook.com,200,https://developers.facebook.com
+developers.pinterest.com,200,https://developers.pinterest.com
+developers.shopify.com,200,https://developers.shopify.com (301) -> https://shopify.dev (200)
+developers.tiktok.com,200,https://developers.tiktok.com
+developers.zoom.us,200,https://developers.zoom.us
+discuss.elastic.co,200,https://discuss.elastic.co
+docs.digitalocean.com,200,https://docs.digitalocean.com
+docs.docker.com,200,https://docs.docker.com
+docs.fastly.com,200,https://docs.fastly.com
+docs.github.com,200,https://docs.github.com (302) -> https://docs.github.com/en (200)
+docs.gitlab.com,200,https://docs.gitlab.com
+docs.google.com,200,https://docs.google.com (302) -> https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://docs.google.com/&followup=https://docs.google.com/&emr=1 (302) -> https://accounts.google.com/InteractiveLogin?continue=https://docs.google.com/&emr=1&followup=https://docs.google.com/&osid=1&passive=1209600&ifkv=AdBytiOy-jf5yhrAxvdZXQw0s46XqH3YoLkz82SkE88aHyB1V7zq06xMnVvvfmNwb0kdW9X5IJ-HuQ (302) -> https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2F&emr=1&followup=https%3A%2F%2Fdocs.google.com%2F&ifkv=AdBytiNqbU5yObvKOvp9phwkVtTmALB59aW0WgciTcchjKAzcKCPxjNRX4xXnb2KJw40RUMRX_kP&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S-1257954282%3A1748535694041699 (200)
+docs.microsoft.com,200,https://docs.microsoft.com (301) -> https://learn.microsoft.com/ (302) -> https://learn.microsoft.com/en-us/ (200)
+docs.mongodb.com,200,https://docs.mongodb.com (301) -> https://www.mongodb.com/docs/ (200)
+download.redis.io,200,https://download.redis.io
+drive.google.com,200,https://drive.google.com (302) -> https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&osid=1&continue=https://drive.google.com/&followup=https://drive.google.com/&emr=1 (302) -> https://accounts.google.com/InteractiveLogin?continue=https://drive.google.com/&emr=1&followup=https://drive.google.com/&osid=1&passive=1209600&service=wise&ifkv=AdBytiMosDCguhUQlwujmCImH7XuDeowzAGAG99miOwbeEAQIg9PviIdmd4I6r92Tsno3z4vWLzC9Q (302) -> https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdrive.google.com%2F&emr=1&followup=https%3A%2F%2Fdrive.google.com%2F&ifkv=AdBytiO9StHIZGXmMzK4wkR-bj0ZaFmmJfXA6X-p74BkZSHhHB4SqzTvQ4SyUHkkrgMSbcLaGhvhKA&osid=1&passive=1209600&service=wise&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S-938892553%3A1748535693945635 (200)
+elements.heroku.com,200,https://elements.heroku.com
+events.docker.com,200,https://events.docker.com (301) -> https://www.docker.com/events (301) -> https://www.docker.com/events/ (200)
+forum.gitlab.com,200,https://forum.gitlab.com
+found.elastic.co,200,https://found.elastic.co
+gaming.youtube.com,200,https://gaming.youtube.com (301) -> https://www.youtube.com/gaming (302) -> https://consent.youtube.com/m?continue=https%3A%2F%2Fwww.youtube.com%2Fgaming%3Fcbrd%3D1&gl=IE&m=0&pc=yt&cm=2&hl=en-GB&src=1 (302) -> https://consent.youtube.com/ml?continue=https://www.youtube.com/gaming?cbrd%3D1&gl=IE&hl=en-GB&cm=2&pc=yt&src=1 (200)
+gist.github.com,200,https://gist.github.com (302) -> https://gist.github.com/starred (200)
+help.dropbox.com,200,https://help.dropbox.com
+help.github.com,200,https://help.github.com (301) -> https://support.github.com (302) -> https://support.github.com/request/landing (200)
+help.instagram.com,200,https://help.instagram.com
+help.netflix.com,200,https://help.netflix.com (302) -> https://help.netflix.com/en (200)
+help.pinterest.com,200,https://help.pinterest.com (307) -> https://help.pinterest.com/en/ (301) -> https://help.pinterest.com/en (200)
+help.reddit.com,200,https://help.reddit.com (301) -> https://www.reddit.com/ (200)
+help.twitch.tv,200,https://help.twitch.tv (301) -> https://help.twitch.tv/s/ (301) -> https://help.twitch.tv/s/?language=en_US (200)
+history.paypal.com,200,https://history.paypal.com (302) -> https://history.paypal.com/ie/home (200)
+hub.docker.com,200,https://hub.docker.com
+jobs.netflix.com,200,https://jobs.netflix.com
+kit.snapchat.com,200,https://kit.snapchat.com (301) -> https://developers.snap.com/ (200)
+learning.linkedin.com,200,https://learning.linkedin.com
+login.microsoft.com,200,https://login.microsoft.com (302) -> https://www.office.com/login# (302) -> https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca&redirect_uri=https%3A%2F%2Fwww.office.com%2Flandingv2&response_type=code%20id_token&scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All&response_mode=form_post&nonce=638841324936464336.ZTAxYWU3NzctYmYyYy00NTE0LWE3MGUtMjIzNWFlZmUzYzYxMWVjZjMzMGItN2MzZS00NTg4LWEwYTItMjRjNmEzYjNlNDY1&ui_locales=en-US&mkt=en-US&client-request-id=bb8c5948-37ec-4b35-955e-b6c24dc0b181&state=zGWDdXhzioqzdOpQi6osXnYCD2gToPPGCLO6xAESS9jzPi7fU1dID8CBF-6sDlGJeg-9TRSZTfTq0MY2s09cFaD6oUhYF1VRXRnawduKCqWruF5TSwjx7d6Iq6z--0-_JiP8qWCvYnEo0M_WWsOSeqGjNskSJafgbGmyUR7Lr8QM-G3KWGRQkESrpQq67RQFxTZ8p2aszt-6bCnPTCTgNl4eIJgg3Ku7GDCr79GgqafcmyEo_X-mhq3FOyhFyOhT8MaDdNNB9NUjvaFS2M9VUw&x-client-SKU=ID_NET8_0&x-client-ver=8.5.0.0 (200)
+m.facebook.com,200,https://m.facebook.com (302) -> https://m.facebook.com/cookie/consent_prompt/?next_uri=https%3A%2F%2Fm.facebook.com%2F&refsrc=deprecated&_rdr (200)
+mail.google.com,200,https://mail.google.com (301) -> https://mail.google.com/mail/ (301) -> https://mail.google.com/mail/u/0/ (302) -> https://accounts.google.com/ServiceLogin?service=mail&passive=1209600&osid=1&continue=https://mail.google.com/mail/u/0/&followup=https://mail.google.com/mail/u/0/&emr=1 (302) -> https://accounts.google.com/InteractiveLogin?continue=https://mail.google.com/mail/u/0/&emr=1&followup=https://mail.google.com/mail/u/0/&osid=1&passive=1209600&service=mail&ifkv=AdBytiPwfYNBVR6aQCHxXksc5hcxt1RO2IXVJygkp2iJumM2JlvYnT41tbVBRdHTnSk71HqFkQ1qfQ (302) -> https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AdBytiO4Ru_oMoORH4V5yI9EGMjhOeViABuFmo1nNaQwxbUszc1xm6UcC9Xpylw2ixCNZFX9RrCY6g&osid=1&passive=1209600&service=mail&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S-267150490%3A1748535694353924 (200)
+marketplace.atlassian.com,200,https://marketplace.atlassian.com
+marketplace.zoom.us,200,https://marketplace.zoom.us
+mathoverflow.net,200,https://mathoverflow.net
+media.netflix.com,200,https://media.netflix.com (301) -> https://media.netflix.com/en/ (200)
+merch.discord.com,200,https://merch.discord.com (302) -> https://discordmerch.com/ (200)
+meta.stackoverflow.com,200,https://meta.stackoverflow.com
+mod.reddit.com,200,https://mod.reddit.com (302) -> https://mod.reddit.com/login (200)
+music.amazon.com,200,https://music.amazon.com
+music.youtube.com,200,https://music.youtube.com (302) -> https://consent.youtube.com/m?continue=https%3A%2F%2Fmusic.youtube.com%2F%3Fcbrd%3D1&gl=IE&m=0&pc=ytm&cm=2&hl=en-GB&src=1 (302) -> https://consent.youtube.com/ml?continue=https://music.youtube.com/?cbrd%3D1&gl=IE&hl=en-GB&cm=2&pc=ytm&src=1 (200)
+new.reddit.com,200,https://new.reddit.com (301) -> https://www.reddit.com/ (200)
+news.airbnb.com,200,https://news.airbnb.com
+news.linkedin.com,200,https://news.linkedin.com
+news.shopify.com,200,https://news.shopify.com (301) -> https://www.shopify.com/news (200)
+newsroom.spotify.com,200,https://newsroom.spotify.com
+office.microsoft.com,200,https://office.microsoft.com (308) -> https://www.microsoft.com/microsoft-365?legRedir=true (302) -> https://www.microsoft.com/en-ie/microsoft-365?legRedir=true (200)
+old.reddit.com,200,https://old.reddit.com
+outlook.microsoft.com,200,http://outlook.microsoft.com (301) -> http://windows.microsoft.com/outlook (301) -> https://go.microsoft.com/fwlink/p/?linkid=808338 (301) -> https://support.office.com/en-us/outlook (301) -> https://support.microsoft.com/en-us/outlook (200)
+pages.github.com,200,https://pages.github.com
+paper.dropbox.com,200,https://paper.dropbox.com (302) -> https://dropbox.com/paper (301) -> https://www.dropbox.com/paper (302) -> https://www.dropbox.com/paper/start?no_redirect=1 (200)
+partners.shopify.com,200,https://partners.shopify.com (301) -> https://www.shopify.com/partners (200)
+photos.google.com,200,https://photos.google.com (302) -> https://www.google.com/photos/about/ (200)
+play.google.com,200,https://play.google.com (302) -> https://play.google.com/store (302) -> https://play.google.com/store/games (200)
+prime.amazon.com,200,https://prime.amazon.com (301) -> https://www.amazon.com/gp/prime (301) -> https://www.amazon.com:443/amazonprime (200)
+raw.githubusercontent.com,200,https://raw.githubusercontent.com (301) -> https://github.com/ (200)
+redditgifts.com,200,https://redditgifts.com (301) -> https://www.reddit.com/ (200)
+redditmedia.com,200,https://redditmedia.com (301) -> https://www.reddit.com/ (200)
+safety.twitch.tv,200,https://safety.twitch.tv (301) -> https://safety.twitch.tv/s/ (301) -> https://safety.twitch.tv/s/?language=en_US (200)
+security.stackexchange.com,200,https://security.stackexchange.com
+serverfault.com,200,https://serverfault.com
+slack-files.com,200,https://slack-files.com (302) -> https://slack.com/ (302) -> https://slack.com/intl/en-ie/ (200)
+smile.amazon.com,200,https://smile.amazon.com (301) -> https://www.amazon.com:443/ (200)
+stackexchange.com,200,https://stackexchange.com
+status.digitalocean.com,200,https://status.digitalocean.com
+status.discord.com,200,https://status.discord.com (301) -> https://discordstatus.com/ (200)
+status.github.com,200,https://status.github.com (301) -> https://www.githubstatus.com/ (200)
+status.heroku.com,200,https://status.heroku.com
+status.slack.com,200,https://status.slack.com (301) -> https://slack-status.com/ (200)
+status.stripe.com,200,https://status.stripe.com
+store.apple.com,200,https://store.apple.com (301) -> https://www.apple.com/store (200)
+store.microsoft.com,200,https://store.microsoft.com (301) -> https://www.microsoftstore.com/ (301) -> https://www.microsoft.com/store/b/sale (302) -> https://www.microsoft.com/en-ie/store/b/sale (200)
+studio.youtube.com,200,https://studio.youtube.com (302) -> https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den-GB%26next%3Dhttps%253A%252F%252Fstudio.youtube.com%252F%26feature%3Dredirect_login&hl=en-GB (302) -> https://accounts.google.com/InteractiveLogin?continue=https://www.youtube.com/signin?action_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den-GB%26next%3Dhttps%253A%252F%252Fstudio.youtube.com%252F%26feature%3Dredirect_login&hl=en-GB&passive=true&service=youtube&uilel=3&ifkv=AdBytiOcextBE0ZvDbzfIrxe0Uym7a6MAqztrT64IqwCxxh8BBHB5JSNLt3-EL6Rs0X6jjO8BwTqaw (302) -> https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den-GB%26next%3Dhttps%253A%252F%252Fstudio.youtube.com%252F%26feature%3Dredirect_login&hl=en-GB&ifkv=AdBytiO-a1prCJSSSDCHnQ-FfxVeWsAnBKdKW7S6SycPsFXwXFqHA9xlqTCGG85Lmb7Elr8kHR-24Q&passive=true&service=youtube&uilel=3&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S-1558267925%3A1748535693943937 (200)
+superuser.com,200,https://superuser.com
+support.apple.com,200,https://support.apple.com
+support.bitbucket.org,200,https://support.bitbucket.org (301) -> https://support.atlassian.com/bitbucket-cloud/ (200)
+support.discord.com,200,https://support.discord.com (301) -> https://support.discord.com/hc (301) -> https://support.discord.com/hc/en-us (200)
+support.microsoft.com,200,https://support.microsoft.com (301) -> https://support.microsoft.com/en-us (200)
+support.stripe.com,200,https://support.stripe.com
+support.tiktok.com,200,https://support.tiktok.com
+support.zoom.us,200,https://support.zoom.us (301) -> https://support.zoom.com/hc (200)
+teams.microsoft.com,200,https://teams.microsoft.com (302) -> https://teams.microsoft.com/v2?clientexperience=t2 (301) -> https://teams.microsoft.com/v2/?clientexperience=t2 (302) -> https://teams.microsoft.com/v2/unsupported-browser#env=work (200)
+translate.google.com,200,https://translate.google.com (302) -> https://consent.google.com/m?continue=https://translate.google.com/&gl=IE&m=0&pc=t&cm=2&hl=en-US&src=1 (302) -> https://consent.google.com/ml?continue=https://translate.google.com/&gl=IE&hl=en-US&cm=2&pc=t&src=1 (200)
+tv.youtube.com,200,https://tv.youtube.com (303) -> https://tv.youtube.com/welcome?utm_servlet=prod&rd_rsn=lo (301) -> https://tv.youtube.com/welcome/?utm_servlet=prod&rd_rsn=lo (200)
+university.atlassian.com,200,https://university.atlassian.com (302) -> https://university.atlassian.com/student/activity/2528664-home (302) -> https://community.atlassian.com/learning (200)
+university.mongodb.com,200,https://university.mongodb.com (308) -> https://learn.mongodb.com/ (200)
+university.redis.com,200,https://university.redis.com (301) -> https://redis.io/university/ (301) -> https://university.redis.io/ (200)
+unix.stackexchange.com,200,https://unix.stackexchange.com
+www.airbnb.com,200,https://www.airbnb.com (307) -> https://www.airbnb.ie/?locale=en&_set_bev_on_new_domain=1748535693_EANWQ1NTZiZDQ0Yj (200)
+www.amazon.com,200,https://www.amazon.com
+www.apple.com,200,https://www.apple.com
+www.atlassian.com,200,https://www.atlassian.com
+www.bitbucket.org,200,https://www.bitbucket.org (301) -> https://bitbucket.org/ (200)
+www.cloudflare.com,200,https://www.cloudflare.com
+www.digitalocean.com,200,https://www.digitalocean.com
+www.discord.com,200,https://www.discord.com (301) -> https://discord.com/ (200)
+www.docker.com,200,https://www.docker.com
+www.dropbox.com,200,https://www.dropbox.com
+www.elastic.co,200,https://www.elastic.co
+www.facebook.com,200,https://www.facebook.com
+www.fastly.com,200,https://www.fastly.com
+www.gitlab.com,200,https://www.gitlab.com (308) -> https://gitlab.com/ (301) -> https://about.gitlab.com/ (200)
+www.google.com,200,https://www.google.com
+www.heroku.com,200,https://www.heroku.com
+www.instagram.com,200,https://www.instagram.com
+www.linkedin.com,200,https://www.linkedin.com
+www.microsoft.com,200,https://www.microsoft.com
+www.mongodb.com,200,https://www.mongodb.com
+www.netflix.com,200,https://www.netflix.com (302) -> https://www.netflix.com/ie/ (200)
+www.paypal.com,200,https://www.paypal.com (302) -> https://www.paypal.com/ie/home (200)
+www.pinterest.com,200,https://www.pinterest.com
+www.reddit.com,200,https://www.reddit.com
+www.redis.io,200,https://www.redis.io (301) -> https://redis.io (200)
+www.shopify.com,200,https://www.shopify.com
+www.slack.com,200,https://www.slack.com (302) -> https://slack.com/ (302) -> https://slack.com/intl/en-ie/ (200)
+www.snapchat.com,200,https://www.snapchat.com
+www.spotify.com,200,https://www.spotify.com (301) -> https://open.spotify.com/ (200)
+www.stackoverflow.com,200,https://www.stackoverflow.com (302) -> https://stackoverflow.com/ (302) -> https://stackoverflow.com/questions (200)
+www.stripe.com,200,https://www.stripe.com (301) -> https://stripe.com (307) -> https://stripe.com/ie (200)
+www.tiktok.com,200,https://www.tiktok.com (302) -> https://www.tiktok.com/explore (200)
+www.twitch.tv,200,https://www.twitch.tv
+www.uber.com,200,https://www.uber.com (301) -> https://www.uber.com/ie/en/ (200)
+www.youtube.com,200,https://www.youtube.com
+www.zoom.us,200,https://www.zoom.us (301) -> https://www.zoom.com (200)
+blog.reddit.com,301,https://blog.reddit.com (301) -> https://www.redditblog.com/ (301) -> https://www.redditinc.com/blog (301) -> https://redditinc.com/blog (200)
+community.mongodb.com,301,https://community.mongodb.com (301) -> https://www.mongodb.com/community/ (200)
+maps.google.com,302,https://maps.google.com (302) -> https://maps.google.com/maps (302) -> https://consent.google.com/ml?continue=https://maps.google.com/maps&gl=IE&m=0&pc=m&uxe=eomtm&cm=2&hl=en&src=1 (200)
+www.github.com,301,https://www.github.com (301) -> https://github.com/ (200)
+freight.uber.com,999,https://freight.uber.com (301) -> http://www.uberfreight.com/ (301) -> http://www.uberfreight.com/ (301) -> http://www.uberfreight.com/ (301) -> http://www.uberfreight.com/ (301) -> http://www.uberfreight.com/ (301) -> http://www.uberfreight.com/ (301) -> http://www.uberfreight.com/ (301) -> http://www.uberfreight.com/ (301) -> http://www.uberfreight.com/ (301)
+ocsnext.ebay.com,999,https://ocsnext.ebay.com (302) -> https://ocsnext.ebay.com/n/error (302) -> https://ocsnext.ebay.com/n/error (302) -> https://ocsnext.ebay.com/n/error (302) -> https://ocsnext.ebay.com/n/error (302) -> https://ocsnext.ebay.com/n/error (302) -> https://ocsnext.ebay.com/n/error (302) -> https://ocsnext.ebay.com/n/error (302) -> https://ocsnext.ebay.com/n/error (302) -> https://ocsnext.ebay.com/n/error (302)
+accounting-dev.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+accounting.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+active-directory-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+admin-panel.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+admin-staging.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+admin.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+admin1.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+admin2.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+admin3.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+analytics-prod.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+analytics.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+api-gateway.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+api-legacy.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+api-v1.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+api-v2.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+api-v3.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+api.dropbox.com,404,https://api.dropbox.com
+api.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+api.instagram.com,404,https://api.instagram.com
+api.linkedin.com,404,https://api.linkedin.com
+api.netflix.com,404,http://api.netflix.com
+api.pinterest.com,404,https://api.pinterest.com
+api.stackoverflow.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+api.twitter.com,404,https://api.twitter.com
+app-dev.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+app-mobile.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+app-prod.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+app-server-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+app-server-02.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+app-server-03.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+app-staging.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+app.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+assets.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+auth-ldap.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+auth-server.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+auth.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+backup-primary.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+backup-s3.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+backup-secondary.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+backup-server-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+backup-server-02.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+backup.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+beta.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+billing-system.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+billing.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+blog.airbnb.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+blog.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+blog.twitter.com,403,https://blog.twitter.com (301) -> https://blog.x.com/ (403)
+business.paypal.com,403,https://business.paypal.com (301) -> https://www.paypal.com/reports (301) -> https://www.paypal.com/reports/ (302) -> https://www.paypal.com/signin?returnUri=https%3A%2F%2Fwww.paypal.com%2Freports%2F (403)
+cache-redis.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+cache-server-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+cache-server-02.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+cache.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+careers.stackoverflow.com,404,https://careers.stackoverflow.com (302) -> https://stackoverflow.com/jobs/get-started (404)
+cdn-east.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+cdn-europe.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+cdn-west.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+cdn.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+chat-internal.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+chat.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+cloud.redis.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+cms-admin.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+cms-editor.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+cms.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+community.bitbucket.org,400,https://community.bitbucket.org
+community.cloudflare.com,403,https://community.cloudflare.com
+config-mgmt.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+config.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+crm-salesforce.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+customer-portal.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+dash.cloudflare.com,403,https://dash.cloudflare.com
+dashboard-exec.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+dashboard-ops.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+dashboard.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+data-warehouse.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+data.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+db-master.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+db-server-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+db-server-02.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+db-slave.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+deploy-automation.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+deploy.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+dev-tools.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+dev.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+developer.bitbucket.org,400,https://developer.bitbucket.org
+dhcp-server-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+dns-server-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+dns-server-02.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+docs.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+download.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+email-gateway.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+email-marketing.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+email.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+errors.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+exchange-server-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+feedback.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+file-server-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+file-server-02.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+file-server.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+file-storage.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+files.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+forum.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+ftp.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+gallery.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+git-internal.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+git-repos.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+git.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+health.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+help-center.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+help-desk.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+help.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+help.twitter.com,403,https://help.twitter.com (301) -> https://help.x.com/ (403)
+hr-benefits.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+hr-portal.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+hr.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+icloud.apple.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+image-gallery.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+image-resize.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+images.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+internal-tools.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+internal.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+inventory-mgmt.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+inventory.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+jenkins-ci.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+jenkins-prod.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+jenkins.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+knowledge-base.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+knowledge-wiki.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+knowledge.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+ldap-server-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+legacy.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+licensing.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+load-balancer-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+load-balancer-02.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+load-balancer.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+load-test.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+mail-archive.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+mail-relay.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+mail-server-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+mail-server-02.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+mail.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+marketing.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+metrics.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+mobile.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+monitor-server-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+monitor-server-02.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+monitor.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+monitoring-alerts.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+monitoring-prod.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+network-scan.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+network-tools.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+news.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+newsroom.paypal.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+newsroom.uber.com,401,https://newsroom.uber.com
+nonexistent1.fakeddomain123.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+nonexistent2.fakeddomain123.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+nonexistent3.fakeddomain123.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+nonexistent4.fakeddomain123.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+nonexistent5.fakeddomain123.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+notifications.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+ntp-server-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+office-365.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+office-tools.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+orders.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+pages.ebay.com,503,https://pages.ebay.com (301) -> https://www.ebay.com (503)
+partners.airbnb.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+partners.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+payment-gateway.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+payment-stripe.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+portal.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+proxy-server-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+proxy-server-02.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+proxy.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+qa.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+queue-rabbitmq.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+queue-worker.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+queue.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+radius-server-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+reporting-bi.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+reporting-engine.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+reports.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+resources.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+sales.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+search-elastic.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+search-engine.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+secure.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+shop.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+slack-edge.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+slow.example.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+staging.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+stats.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+status.fastly.com,403,https://status.fastly.com (301) -> https://www.fastlystatus.com (403)
+support.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+support.snapchat.com,403,https://support.snapchat.com (301) -> https://help.snapchat.com/hc (301) -> https://help.snapchat.com/hc/en-us (403)
+syslog-server-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+tacacs-server-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+task-mgmt.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+task-scheduler.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+test.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+test1.example.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+test100.nonexistentdomain999.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+test101.nonexistentdomain999.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+test102.nonexistentdomain999.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+test103.nonexistentdomain999.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+test104.nonexistentdomain999.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+test2.example.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+test3.example.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+test4.example.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+test5.example.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+tickets.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+timeout.example.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+tools.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+training.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+try.redis.io,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+updates.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+upload.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+user-management.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+user-profiles.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+validation.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+video-conf.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+video-streaming.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+vpn.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+warehouse.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+web-analytics.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+web-cache.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+web-server-01.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+web-server-02.demo-corp.local,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+wiki.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+www.ebay.com,503,https://www.ebay.com
+www.example-corp.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+www.twitter.com,400,https://www.twitter.com (301) -> https://twitter.com/ (302) -> https://x.com/ (400)
+xbox.microsoft.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+xml-feed.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+xml-parser.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+xmlrpc.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+young-talent.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+youth-portal.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+youtube.google.com,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+yum.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+zendesk.techcorp-demo.net,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+zoom-integration.fictional-company.org,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"
+zoom-rooms.fake-enterprise.biz,ERROR,"Error: ConnectError: [Errno 8] nodename nor servname provided, or not known"

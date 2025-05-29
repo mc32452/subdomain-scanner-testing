@@ -177,9 +177,13 @@ class SubdomainScanner:
                         
                         duration_ms = int((time.time() - start_time) * 1000)
                         
+                        # Return the status code of the FIRST response (initial domain response)
+                        # not the final response after following redirects
+                        initial_status_code = redirect_chain[0]['status_code'] if redirect_chain else response.status_code
+                        
                         return {
                             'domain': domain,
-                            'status_code': response.status_code,
+                            'status_code': initial_status_code,
                             'redirect_chain': json.dumps(redirect_chain),
                             'snippet': snippet,
                             'error_message': None,
@@ -278,7 +282,7 @@ class SubdomainScanner:
         
         # Configure HTTP client with optimizations for large-scale scanning
         limits = httpx.Limits(max_keepalive_connections=100, max_connections=200)
-        timeout = httpx.Timeout(60.0, connect=30.0)  # Very forgiving timeouts to catch slow servers
+        timeout = httpx.Timeout(30.0, connect=15.0)  # Balanced timeouts for good performance
         
         async with httpx.AsyncClient(limits=limits, timeout=timeout) as client:
             # Create progress bar
