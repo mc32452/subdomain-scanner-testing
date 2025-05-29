@@ -8,10 +8,27 @@ A high-performance Python tool for scanning thousands of subdomains with async H
 - **Intelligent Caching**: SQLite-based results storage with automatic skip of already-scanned valid domains
 - **Full Redirect Tracking**: Captures complete redirect chains for 3xx responses
 - **Content Snippets**: Extracts HTML snippets from 200 responses for soft-404 detection
-- **Comprehensive Logging**: Detailed error logging and scan metrics
+- **Comprehensive Error Analysis**: Detailed categorization of connection timeouts, DNS failures, etc.
 - **Incremental Scanning**: Only rescans failed/invalid results, saving time
-- **Rich Output**: Beautiful progress bars and summary tables
-- **Export Options**: JSON exports for successful, redirecting, or all results
+- **Rich Output**: Beautiful progress bars and summary tables with error breakdown
+- **Export Options**: CSV exports for successful, redirecting, or all results
+
+## ⚠️ Understanding Scan Results
+
+**High failure rates (90-95%) are COMPLETELY NORMAL for subdomain enumeration!**
+
+### What "Failed to Scan" Means:
+
+- **Connection Timeout**: Domain took too long to respond (likely offline/doesn't exist)
+- **Read Timeout**: Server accepted connection but didn't send response (slow/overloaded)
+- **Connection Error**: Network unreachable or connection refused (offline/blocked)
+- **DNS Resolution**: Domain doesn't exist or DNS issues
+- **SSL/TLS Errors**: Certificate problems or HTTPS configuration issues
+
+### Expected Results:
+- **Success Rate**: 5-10% is considered excellent for subdomain discovery
+- **Failure Rate**: 90-95% is normal - most random subdomains don't exist
+- **Focus**: The successful domains are your valuable findings!
 
 ## 📦 Installation
 
@@ -25,23 +42,48 @@ pip install -r requirements.txt
 
 ## 🎯 Quick Start
 
+### Analyze Your Current Results
+
+If you've already run a scan and want to understand the results:
+
+```bash
+# Analyze your current scan results database
+python check_results.py
+
+# Get detailed error breakdown
+python analyze_results.py
+```
+
 ### Option 1: Command Line Interface
 
 ```bash
 # Basic scan
 python cli.py example_domains.txt
 
-# Scan with custom concurrency
+# Scan with custom concurrency  
 python cli.py example_domains.txt --concurrent 60
 
 # Rescan only failed domains
 python cli.py example_domains.txt --rescan-failed
 
-# Export successful domains to JSON
+# Export successful domains to CSV
 python cli.py example_domains.txt --export-200
 
 # Full example with all options
 python cli.py example_domains.txt --concurrent 80 --rescan-failed --export-all
+```
+
+### Option 2: Optimized Configurations
+
+```bash
+# Use pre-tuned configurations for different scenarios
+python optimized_scanner.py
+
+# Available configs:
+# - aggressive: Fast scanning, higher failure rate
+# - balanced: Moderate speed, better success rate  
+# - conservative: Slower but more reliable
+# - stealth: Very slow, minimal detection risk
 ```
 
 ### Option 2: Direct Python Usage

@@ -61,6 +61,7 @@ class SubdomainScanner:
         # Counters for summary
         self.new_200s = 0
         self.new_3xxs = 0
+        self.new_999s = 0  # Too many redirects
         self.failed_scans = 0
         self.skipped_domains = 0
         
@@ -86,30 +87,33 @@ class SubdomainScanner:
         conn.close()
         
     def get_cached_domains(self) -> Set[str]:
-        """Get domains that already have successful results (200 or 3xx)"""
+        """Get domains that already have meaningful results (200/3xx responses or redirect chains)"""
         conn = sqlite3.connect(self.db_path)
         cursor = conn.execute("""
             SELECT domain FROM results 
             WHERE status_code BETWEEN 200 AND 399
+               OR status_code = 999  -- Too many redirects
+               OR (redirect_chain IS NOT NULL 
+                   AND redirect_chain != '[]' 
+                   AND redirect_chain != '')
         """)
         cached = {row[0] for row in cursor.fetchall()}
         conn.close()
-        logger.info(f"Found {len(cached)} domains already cached with valid responses")
+        logger.info(f"Found {len(cached)} domains already cached with meaningful responses or redirect chains")
         return cached
         
     def get_failed_domains(self) -> Set[str]:
-        """Get domains that failed or have no valid response for retry"""
+        """Get domains that failed with no meaningful data for retry"""
         conn = sqlite3.connect(self.db_path)
         cursor = conn.execute("""
             SELECT domain FROM results 
-            WHERE status_code IS NULL 
-               OR status_code < 200 
-               OR status_code >= 400
-               OR error_message IS NOT NULL
+            WHERE (status_code IS NULL OR (status_code < 200 AND status_code != 999))
+              AND (redirect_chain IS NULL OR redirect_chain = '[]' OR redirect_chain = '')
+              AND error_message IS NOT NULL
         """)
         failed = {row[0] for row in cursor.fetchall()}
         conn.close()
-        logger.info(f"Found {len(failed)} domains with failed/invalid responses for retry")
+        logger.info(f"Found {len(failed)} domains with failed responses and no redirect data for retry")
         return failed
         
     async def fetch_with_redirects(self, client: httpx.AsyncClient, domain: str, semaphore: asyncio.Semaphore) -> Optional[Dict]:
@@ -130,7 +134,7 @@ class SubdomainScanner:
                         response = await client.get(
                             current_url,
                             follow_redirects=False,
-                            timeout=15.0,
+                            timeout=60.0,  # Very forgiving timeout to catch slow servers
                             headers={
                                 'User-Agent': 'Mozilla/5.0 (compatible; SubdomainScanner/1.0)',
                                 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
@@ -191,11 +195,12 @@ class SubdomainScanner:
                         else:
                             raise e
                 
-                # Too many redirects
+                # Too many redirects - use special status code
                 duration_ms = int((time.time() - start_time) * 1000)
+                logger.info(f"Too many redirects for {domain} ({len(redirect_chain)} redirects)")
                 return {
                     'domain': domain,
-                    'status_code': None,
+                    'status_code': 999,  # Special status code for too many redirects
                     'redirect_chain': json.dumps(redirect_chain),
                     'snippet': "",
                     'error_message': f"Too many redirects (>{max_redirects})",
@@ -241,6 +246,8 @@ class SubdomainScanner:
             self.new_200s += 1
         elif result['status_code'] and 300 <= result['status_code'] < 400:
             self.new_3xxs += 1
+        elif result['status_code'] == 999:
+            self.new_999s += 1
         elif result['error_message'] or not result['status_code']:
             self.failed_scans += 1
     
@@ -269,9 +276,9 @@ class SubdomainScanner:
         # Create semaphore for rate limiting
         semaphore = asyncio.Semaphore(self.max_concurrent)
         
-        # Configure HTTP client with optimizations
+        # Configure HTTP client with optimizations for large-scale scanning
         limits = httpx.Limits(max_keepalive_connections=100, max_connections=200)
-        timeout = httpx.Timeout(15.0, connect=10.0)
+        timeout = httpx.Timeout(60.0, connect=30.0)  # Very forgiving timeouts to catch slow servers
         
         async with httpx.AsyncClient(limits=limits, timeout=timeout) as client:
             # Create progress bar
@@ -302,22 +309,57 @@ class SubdomainScanner:
         return self.get_scan_summary(start_time)
     
     def get_scan_summary(self, start_time: float) -> Dict:
-        """Generate scan summary"""
+        """Generate detailed scan summary with error categorization"""
         total_time = time.time() - start_time
         
+        # Get error breakdown from database
+        conn = sqlite3.connect(self.db_path)
+        
+        # Count errors by category
+        error_categories = {
+            'Connection timeout': 0,
+            'Read timeout': 0,
+            'Connection error': 0,
+            'DNS resolution': 0,
+            'SSL/TLS errors': 0,
+            'Too many redirects': 0,
+            'Other errors': 0
+        }
+        
+        cursor = conn.execute("SELECT error_message FROM results WHERE error_message IS NOT NULL")
+        for (error_msg,) in cursor.fetchall():
+            if 'Connection timeout' in error_msg:
+                error_categories['Connection timeout'] += 1
+            elif 'Read timeout' in error_msg:
+                error_categories['Read timeout'] += 1
+            elif 'Connection error' in error_msg or 'ConnectError' in error_msg:
+                error_categories['Connection error'] += 1
+            elif 'DNS' in error_msg or 'UnsupportedProtocol' in error_msg:
+                error_categories['DNS resolution'] += 1
+            elif 'SSL' in error_msg or 'TLS' in error_msg or 'certificate' in error_msg.lower():
+                error_categories['SSL/TLS errors'] += 1
+            elif 'Too many redirects' in error_msg:
+                error_categories['Too many redirects'] += 1
+            else:
+                error_categories['Other errors'] += 1
+        
+        conn.close()
+        
         summary = {
-            'total_scanned': self.new_200s + self.new_3xxs + self.failed_scans,
+            'total_scanned': self.new_200s + self.new_3xxs + self.new_999s + self.failed_scans,
             'new_200s': self.new_200s,
             'new_3xxs': self.new_3xxs,
+            'new_999s': self.new_999s,
             'failed_scans': self.failed_scans,
             'skipped_domains': self.skipped_domains,
-            'scan_duration': total_time
+            'scan_duration': total_time,
+            'error_breakdown': error_categories
         }
         
         return summary
     
     def print_summary(self, summary: Dict):
-        """Print formatted scan summary"""
+        """Print formatted scan summary with error breakdown"""
         table = Table(title="🔍 Subdomain Scan Summary")
         table.add_column("Metric", style="cyan")
         table.add_column("Count", style="green")
@@ -325,11 +367,48 @@ class SubdomainScanner:
         table.add_row("Total domains scanned", str(summary['total_scanned']))
         table.add_row("New 200 responses added", str(summary['new_200s']))
         table.add_row("New 3xx responses with redirect chains", str(summary['new_3xxs']))
+        table.add_row("Too many redirects (999)", str(summary['new_999s']))
         table.add_row("Domains skipped (already cached)", str(summary['skipped_domains']))
         table.add_row("Domains failed or unreachable", str(summary['failed_scans']))
         table.add_row("Total scan duration", f"{summary['scan_duration']:.2f} seconds")
         
         self.console.print(table)
+        
+        # Print error breakdown
+        if summary.get('error_breakdown'):
+            error_table = Table(title="❌ Error Breakdown")
+            error_table.add_column("Error Type", style="red")
+            error_table.add_column("Count", style="yellow")
+            error_table.add_column("Description", style="white")
+            
+            descriptions = {
+                'Connection timeout': 'Server took too long to accept connection (likely offline)',
+                'Read timeout': 'Server accepted connection but didn\'t respond (overloaded/slow)',
+                'Connection error': 'Connection refused or network unreachable (offline/blocked)',
+                'DNS resolution': 'Domain doesn\'t exist or DNS failure',
+                'SSL/TLS errors': 'Certificate issues or protocol mismatches',
+                'Too many redirects': 'Redirect loop detected (server misconfiguration)',
+                'Other errors': 'Various other HTTP/network errors'
+            }
+            
+            for error_type, count in summary['error_breakdown'].items():
+                if count > 0:
+                    error_table.add_row(
+                        error_type, 
+                        str(count), 
+                        descriptions.get(error_type, "Unknown error type")
+                    )
+            
+            if any(count > 0 for count in summary['error_breakdown'].values()):
+                self.console.print("\n")
+                self.console.print(error_table)
+                
+                # Add helpful tips
+                self.console.print("\n[bold yellow]💡 Tips for large-scale scanning:[/bold yellow]")
+                self.console.print("• [green]Connection timeouts are normal[/green] - most random subdomains don't exist")
+                self.console.print("• [green]High failure rates are expected[/green] - 95%+ failure rate is typical for subdomain enumeration")
+                self.console.print("• [blue]Focus on successful results[/blue] - even finding 5-10% live domains is a good outcome")
+                self.console.print("• [blue]Consider reducing concurrency[/blue] - lower concurrent connections may improve success rate")
     
     def export_results(self, status_codes: List[int] = None, output_file: str = "results.csv") -> Dict:
         """Export results to CSV file"""
